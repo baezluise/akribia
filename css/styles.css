@@ -1,0 +1,345 @@
+/* styles.css - Diseño inspirado en akribiaing.com, con paleta y layout moderno */
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --accent: #0666ff;
+  --muted: #6b7280;
+  --radius: 14px;
+  --container: 1100px;
+  --shadow: 0 8px 30px rgba(10, 15, 35, 0.06);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  color-scheme: light;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: #0b1220;
+}
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(11, 17, 32, 0.03);
+  z-index: 50;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+}
+.brand {
+  font-weight: 700;
+  color: #0b1220;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.brand span {
+  color: var(--accent);
+}
+.menu-btn {
+  display: none;
+  border: 0;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.45rem 0.7rem;
+  border-radius: 10px;
+  transition: background 0.15s;
+}
+.nav a:hover {
+  background: rgba(6, 102, 255, 0.06);
+}
+.cta {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.45rem 0.85rem;
+}
+
+/* HERO */
+.hero {
+  padding: 3.2rem 0;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 2rem;
+  align-items: center;
+}
+.hero-left h1 {
+  font-size: 2.1rem;
+  margin: 0 0 0.6rem;
+  line-height: 1.05;
+}
+.subtitle {
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+.hero-cta .btn {
+  margin-right: 0.6rem;
+}
+.features-inline {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* CARD / IMAGE */
+.card-eval {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+/* SECTION */
+.section {
+  padding: 2.2rem 0;
+}
+.section.alt {
+  background: linear-gradient(180deg, #fff 0%, #f6f8fb 100%);
+}
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+.lead {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+/* CARDS GRID */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.course {
+  background: var(--card);
+  padding: 1.1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.link-more {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.feature {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  flex: 1;
+}
+
+/* TESTIMONIOS */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.testimonial {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+}
+.testimonial blockquote {
+  margin: 0;
+  font-style: italic;
+  color: #0b1220;
+}
+.testimonial figcaption {
+  margin-top: 0.6rem;
+  color: var(--muted);
+}
+
+/* CONTACT */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 2rem;
+  align-items: start;
+}
+.contact-left .contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  color: var(--muted);
+}
+.small-note {
+  margin-top: 0.6rem;
+  color: var(--muted);
+}
+
+/* FORM */
+.contact-form {
+  background: var(--card);
+  padding: 1.1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.row {
+  display: flex;
+  gap: 0.8rem;
+}
+.field {
+  display: block;
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+.field span {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #e6e9ef;
+  font-size: 0.95rem;
+  outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  box-shadow: 0 6px 18px rgba(6, 102, 255, 0.06);
+  border-color: rgba(6, 102, 255, 0.15);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.form-msg {
+  margin-top: 0.6rem;
+  color: var(--muted);
+}
+
+/* BUTTONS */
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+.btn.small {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
+.ghost {
+  background: transparent;
+  border: 1px solid rgba(6, 102, 255, 0.12);
+  color: var(--accent);
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(11, 17, 32, 0.04);
+  margin-top: 2rem;
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .hero-left h1 {
+    font-size: 1.6rem;
+  }
+}
