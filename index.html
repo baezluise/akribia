@@ -1,234 +1,70 @@
+<!-- Página Akribia con CSS puro -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Akribia — Inglés con resultados</title>
-    <meta
-      name="description"
-      content="Clases de inglés online y presenciales. Profesores certificados, metodología comunicativa y planes personalizados."
-    />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akribia</title>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#">Akribia<span>ing</span></a>
-
-        <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
-
-        <nav id="nav" class="nav">
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#metodo">Método</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
-            <li><a class="cta" href="#reserva">Reserva</a></li>
-          </ul>
-        </nav>
-      </div>
+    <!-- NAVBAR -->
+    <header>
+      <h2>Akribia</h2>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <main>
-      <!-- HERO -->
-      <section id="inicio" class="hero">
-        <div class="container hero-grid">
-          <div class="hero-left">
-            <h1>Inglés práctico. Resultados reales.</h1>
-            <p class="subtitle">
-              Clases personalizadas para hablar con confianza — online y presenciales. Profesores
-              certificados TESOL/Tefl.
-            </p>
-            <div class="hero-cta">
-              <a href="#reserva" class="btn">Reserva tu evaluación gratuita</a>
-              <a href="#cursos" class="btn ghost">Ver cursos</a>
-            </div>
-            <ul class="features-inline">
-              <li>✅ Profesores certificados</li>
-              <li>✅ Plan personalizado</li>
-              <li>✅ Métodos comunicativos</li>
-            </ul>
-          </div>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Precisión y seguridad en cada proyecto</h1>
+        <p>Akribia garantiza excelencia en obras civiles y sistemas integrados.</p>
+        <a href="#contact" class="btn">Contáctanos</a>
+      </div>
+    </div>
 
-          <div class="hero-right">
-            <div class="card-eval">
-              <h3>Evaluación rápida</h3>
-              <p>Prueba de nivel en 15 minutos + plan recomendado.</p>
-              <a href="#reserva" class="btn small">Agendar ahora</a>
-            </div>
-            <div class="hero-image" aria-hidden="true">
-              <!-- placeholder image -->
-              <img
-                src="https://via.placeholder.com/420x280.png?text=Clases+Online"
-                alt="Clases online"
-              />
-            </div>
-          </div>
+    <!-- SERVICIOS -->
+    <section id="services">
+      <h2>¿Por qué elegirnos?</h2>
+      <p>Ofrecemos precisión, seguridad y excelencia.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Acabados</h3>
+          <p>Calidad y durabilidad en cada detalle.</p>
         </div>
-      </section>
 
-      <!-- CURSOS -->
-      <section id="cursos" class="section">
-        <div class="container">
-          <h2 class="section-title">Nuestros cursos</h2>
-          <p class="lead">
-            Programas pensados para objetivos reales: conversación, exámenes y trabajo.
-          </p>
-          <div class="cards-grid">
-            <article class="course">
-              <h3>1:1 - Conversación</h3>
-              <p>Clases enfocadas en fluidez y confianza. Ajustadas a tu ritmo.</p>
-              <a class="link-more" href="#reserva">Más info →</a>
-            </article>
-            <article class="course">
-              <h3>Grupos reducidos</h3>
-              <p>Grupos de máximo 6 estudiantes centrados en interacción real.</p>
-              <a class="link-more" href="#reserva">Más info →</a>
-            </article>
-            <article class="course">
-              <h3>Preparación exámenes</h3>
-              <p>IELTS / TOEFL / B2 First. Estrategia, simulacros y feedback.</p>
-              <a class="link-more" href="#reserva">Más info →</a>
-            </article>
-          </div>
+        <div class="card">
+          <h3>Mantenimientos Locativos</h3>
+          <p>Mantenimiento preciso y seguro.</p>
         </div>
-      </section>
 
-      <!-- METODO -->
-      <section id="metodo" class="section alt">
-        <div class="container">
-          <h2 class="section-title">Nuestro método</h2>
-          <p class="lead">Enfoque comunicativo + corrección formativa + tareas reales.</p>
-          <div class="features">
-            <div class="feature">
-              <h4>Habla desde el día 1</h4>
-              <p>Actividades prácticas que impulsan producción oral.</p>
-            </div>
-            <div class="feature">
-              <h4>Plan personalizado</h4>
-              <p>Objetivos mensurables y seguimiento.</p>
-            </div>
-            <div class="feature">
-              <h4>Material práctico</h4>
-              <p>Recursos digitales y tareas semanales.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TESTIMONIOS -->
-      <section id="testimonios" class="section">
-        <div class="container">
-          <h2 class="section-title">Testimonios</h2>
-          <div class="testimonials">
-            <figure class="testimonial">
-              <blockquote>
-                "Me ayudaron a preparar el examen y saqué la nota que necesitaba. Profesores
-                excelentes."
-              </blockquote>
-              <figcaption>— María, 27</figcaption>
-            </figure>
-            <figure class="testimonial">
-              <blockquote>
-                "Las clases son dinámicas y prácticas. Noté mejoría en pocas semanas."
-              </blockquote>
-              <figcaption>— Juan, 33</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- RESERVA / CONTACTO -->
-      <section id="reserva" class="section contact-section">
-        <div class="container contact-grid">
-          <div class="contact-left">
-            <h2>Reserva tu evaluación gratuita</h2>
-            <p>Selecciona tu preferencia, te contactamos con horarios disponibles.</p>
-            <ul class="contact-list">
-              <li><strong>Email:</strong> contacto@ejemplo.com</li>
-              <li><strong>Teléfono:</strong> +57 300 000 0000</li>
-            </ul>
-            <div class="small-note">Atendemos en: presencial (Bogotá) y online (Zoom).</div>
-          </div>
-
-          <form id="contactForm" class="contact-form" action="/contact" method="POST" novalidate>
-            <div class="row">
-              <label class="field">
-                <span>Nombre</span>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  placeholder="Tu nombre completo"
-                />
-              </label>
-              <label class="field">
-                <span>Email</span>
-                <input type="email" name="email" id="email" required placeholder="tu@correo.com" />
-              </label>
-            </div>
-
-            <label class="field">
-              <span>Servicio de interés</span>
-              <select name="service" id="service">
-                <option value="evaluacion">Evaluación gratuita</option>
-                <option value="1to1">Clases 1:1</option>
-                <option value="grupos">Grupos</option>
-                <option value="examen">Preparación examen</option>
-              </select>
-            </label>
-
-            <label class="field">
-              <span>Mensaje / Preferencia (horario, presencial/online)</span>
-              <textarea
-                name="message"
-                id="message"
-                rows="5"
-                required
-                placeholder="Cuéntame tus objetivos..."
-              ></textarea>
-            </label>
-
-            <div class="form-actions">
-              <button class="btn" type="submit">Enviar solicitud</button>
-              <button class="btn ghost" type="button" id="resetBtn">Limpiar</button>
-            </div>
-
-            <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="brand small" href="#">Akribia<span>ing</span></a>
-          <p>Comunicación real, resultados medibles.</p>
-        </div>
-        <nav>
-          <ul class="footer-links">
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#metodo">Método</a></li>
-            <li><a href="#reserva">Contacto</a></li>
-          </ul>
-        </nav>
-        <div>
-          <p>© <span id="year"></span> Akribiaing</p>
+        <div class="card">
+          <h3>Seguridad y Salud en el Trabajo</h3>
+          <p>Entornos seguros y protegidos.</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="js/main.js"></script>
+    <!-- CONTACTO / FORMULARIO -->
+    <section id="contact">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Nombre" />
+        <input type="email" placeholder="Correo" />
+        <textarea rows="5" placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Akribia — Todos los derechos reservados</p>
+    </footer>
   </body>
 </html>
